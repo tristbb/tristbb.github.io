@@ -5,14 +5,17 @@ const MarkdownRenderer = ({ filename }) => {
   const [markdownContent, setMarkdownContent] = useState("");
 
   useEffect(() => {
-    const fetchMarkdownContent = async () => {
-      try {
-        const response = await fetch(`/src/${filename}.md`); // Adjust the path accordingly
-        const text = await response.text();
-        setMarkdownContent(text);
-      } catch (error) {
-        console.error(`Error reading Markdown file: ${error.message}`);
-      }
+    const fetchMarkdownContent = () => {
+      import(`../poems/${filename}.md`)
+        .then((res) => {
+          fetch(res.default)
+            .then((res) => console.log(res))
+            .then((res) => res.text())
+            .then((res) => setMarkdownContent(res))
+
+            .catch((err) => console.log(err));
+        })
+        .catch((err) => console.log(err));
     };
 
     fetchMarkdownContent();
@@ -20,7 +23,7 @@ const MarkdownRenderer = ({ filename }) => {
 
   return (
     <div>
-      <ReactMarkdown>{markdownContent}</ReactMarkdown>
+      <ReactMarkdown>{filename}</ReactMarkdown>
     </div>
   );
 };

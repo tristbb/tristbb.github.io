@@ -4,8 +4,6 @@ Je suis une journée d’été,
 
 léger comme le repas de midi
 
-
-
 Les mouettes chient sur les corps nus des plages
 
 Ils se font bronzer par le soleil de midi, mais ils sont froids
@@ -45,8 +43,6 @@ une glace jetée sur la bitume, naufragée dans le cornet
 Plus en plus de corps cuits s’empilent encore sur les dunes vertes
 
 expulsés au rivage
-
-
 
 Je suis une journée d’été
 

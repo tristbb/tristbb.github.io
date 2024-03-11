@@ -17,10 +17,10 @@ const HeaderCrow = () => {
         alt="crowspread"
         className="hidden h-full rounded-full p-3 group-hover:block"
       />
-      <div className="font-mono text-stone-300 text-3xl h-fit pr-20 group-hover:hidden">
+      <div className="font-serif text-stone-300 text-3xl h-fit pr-20 group-hover:hidden">
         tristan baujault-borresen;
       </div>
-      <div className="font-mono text-stone-300 text-3xl h-fit pr-20 group-hover:block hidden">
+      <div className="font-serif text-stone-300 text-3xl h-fit pr-20 group-hover:block hidden">
         poetry & thought;
       </div>
     </div>
