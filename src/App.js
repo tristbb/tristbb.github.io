@@ -1,10 +1,14 @@
-import logo from "./logo.svg";
 import "./App.css";
+import HeaderCrow from "./components/HeaderCrow";
+import SmokeBackground from "./components/smoke/SmokeBackground";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Tristan Baujault-Borresen</header>
+    <div className="flex flex-row w-full h-full ">
+      <div className="w-full bg-gray-950">
+        <HeaderCrow />
+      </div>
+      <SmokeBackground />
     </div>
   );
 }

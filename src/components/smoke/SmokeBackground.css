@@ -1,0 +1,6 @@
+.smoke-effect {
+  background-image: url("../../images/smoke.gif"); /* Assuming the GIF is in the same directory as the CSS file */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
